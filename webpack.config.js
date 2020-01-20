@@ -44,13 +44,6 @@ module.exports = {
         ...tw
       }
     }),
-    new HtmlWebPackPlugin({
-      template: 'index.pug',
-      filename: 'index.en.html',
-      i18n: {
-        ...en
-      }
-    }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css'

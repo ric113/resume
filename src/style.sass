@@ -1,2 +1,33 @@
 body
-  background: blue
+  width: 100%
+  max-width: 800px
+  margin: 48px auto
+  color: #3C3C3C
+
+  h1, h2, h3, h4 
+    margin: 0
+
+  #profile
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    .left-block
+      .names
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        padding-bottom: 3px
+        margin-bottom: 3px
+        border-bottom: 1px solid black
+        > *
+          margin: 0 4px
+
+      .job
+        text-align: right
+        
+    .right-block
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start

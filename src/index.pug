@@ -1,10 +1,25 @@
-- 
-  var name = self.htmlWebpackPlugin.options.i18n.name
-  var age = 12
-
 html
   head
-    title Test
+    title Ricky's resume
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css')
   body
-    p= name
-    p hello #{age}
+    section(id='profile')
+      - var name = self.htmlWebpackPlugin.options.i18n.name
+      - var enName = self.htmlWebpackPlugin.options.i18n.enName
+      - var job = self.htmlWebpackPlugin.options.i18n.job
+      - var profile = self.htmlWebpackPlugin.options.i18n.profile
+      - var socials = self.htmlWebpackPlugin.options.i18n.socials
+      div(class="left-block")
+        div(class="names")
+          h1= name
+          h4= enName
+        h4(class="job")= job
+      div(class="right-block")
+        each social in socials
+          div
+            i(class=social.iconClass)
+            a(href=social.link)= social.text
+    section(id='skills')
+    section(id='experience')
+    section(id='education')
