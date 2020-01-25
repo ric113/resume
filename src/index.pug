@@ -1,9 +1,22 @@
+- var lang = self.htmlWebpackPlugin.options.i18n.lang
+
 html
   head
     title Ricky's resume
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="author", content="Ricky Hsieh")
+    meta(name="description", content="Ricky Hsieh's resume")
+    meta(name="keywords", content="Ricky Hsieh, Chen-Yuan Hsieh, resume, software engineer, frontend engineer, 謝禎原, 履歷, 軟體工程師, 前端工程師")
+    link(rel="shortcut icon" href="favicon.ico")
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css')
   body
+    div(id="toolbar")
+      a(href='/#') 中文
+      a(href='/index.en.html') English
+      div(class="print-btn" onclick="window.print(); return false;")
+        i(class="fas fa-print")
+
     section(id='profile')
       - var name = self.htmlWebpackPlugin.options.i18n.name
       - var enName = self.htmlWebpackPlugin.options.i18n.enName
@@ -14,12 +27,55 @@ html
         div(class="names")
           h1= name
           h4= enName
-        h4(class="job")= job
-      div(class="right-block")
+        h5(class="job") #{job} @ Taiwan
+      ul(class="right-block")
         each social in socials
-          div
+          li
             i(class=social.iconClass)
             a(href=social.link)= social.text
+
     section(id='skills')
-    section(id='experience')
-    section(id='education')
+      - var skills = self.htmlWebpackPlugin.options.i18n.skills
+      - var skillTitle = self.htmlWebpackPlugin.options.i18n.skillTitle
+      h2(class="title")= skillTitle
+      each skill in skills
+        div(class="skill-block")
+          h3(class="sub-title")= skill.category
+          each entry in skill.entries
+            span(class="skill-entry")= entry
+
+    section(id='experiences')
+      - var experiences = self.htmlWebpackPlugin.options.i18n.experiences
+      - var experienceTitle = self.htmlWebpackPlugin.options.i18n.experienceTitle
+      h2(class="title")= experienceTitle
+      each experience in experiences
+        div(class="expr-block")
+          div(class="expr-title-block") 
+            if lang === 'en'
+              span(class="expr-title") #{experience.job} @ #{experience.company}, Taiwan
+            else
+              span(class="expr-title") #{experience.job} @ #{experience.company}
+            span(class="expr-duration")= experience.duration
+          ul(class="expr-whatido-block")
+            each whatIDo in experience.whatIDo
+              li(class="expr-whatido content")= whatIDo
+          div(class="expr-tech-stack-block")
+            h4(class="expr-tech-stack-title") tech. stack：
+            each techStack in experience.techStack
+              span(class="expr-tech-stack")= techStack
+
+    section(id='educations')
+      - var educations = self.htmlWebpackPlugin.options.i18n.educations
+      - var educationTitle = self.htmlWebpackPlugin.options.i18n.educationTitle
+      h2(class="title")= educationTitle
+      each education in educations
+        div(class="edu-block")
+          div(class="edu-title-block")
+            if lang === 'en'
+              span(class="edu-title") #{education.degree} in #{education.major}, #{education.school}, Taiwan
+            else
+              span(class="edu-title") #{education.school} #{education.major} - #{education.degree}
+            span(class="edu-duration")= education.duration
+          if education.lab && education.advisor
+            p(class="edu-descp content") #{education.lab} - #{education.advisor}
+    

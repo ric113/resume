@@ -1,11 +1,73 @@
 body
+  position: relative
   width: 100%
   max-width: 800px
   margin: 48px auto
-  color: #3C3C3C
+  color: rgb(61, 62, 66)
 
-  h1, h2, h3, h4 
+  h1, h2, h3, h4, h5
     margin: 0
+  a
+    color: inherit
+    text-decoration: none
+
+  ul
+    margin: 0
+    list-style-type: none
+
+  section
+    margin-bottom: 64px
+
+    .title
+      position: relative
+      padding-bottom: 4px
+      padding-left: 4px
+      margin-bottom: 12px
+      border-bottom: 1px solid
+
+      &::after 
+        content: ""
+        position: absolute
+        right: -6px
+        top: 27px
+        width: 8px
+        height: 8px
+        background: rgb(61, 62, 66)
+        border-radius: 4px
+    
+    .sub-title
+      margin-bottom: 2px
+
+    .content
+      color: #888
+
+  #toolbar
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    left: 0
+    top: -48px
+    background: rgb(61, 62, 66)
+
+    a
+      padding: 4px
+      margin: 3px 2px
+      font-size: 14px
+      color: #fff
+      border-right: 1px solid #fff
+
+      &:last-child
+        border-right: 0
+    .print-btn
+      cursor: pointer
+      i 
+        padding: 4px
+        color: #fff
+
+    @media print   
+      display: none !important
+    
 
   #profile
     display: flex
@@ -13,9 +75,11 @@ body
     align-items: center
 
     .left-block
+      min-width: 30%
+      
       .names
         display: flex
-        justify-content: space-between
+        justify-content: space-around
         align-items: flex-end
         padding-bottom: 3px
         margin-bottom: 3px
@@ -25,9 +89,73 @@ body
 
       .job
         text-align: right
+        font-style: italic
         
     .right-block
       display: flex
       flex-direction: column
       justify-content: center
       align-items: flex-start
+      margin-top: 8px
+      font-size: 18px
+
+      li
+        margin-bottom: 6px
+
+        i
+          margin-right: 6px
+
+  #skills
+    .skill-block
+      margin-bottom: 12px
+
+      .skill-entry
+        font-size: 18px
+        &:not(:last-child)::after
+          content: '、'
+        &:nth-child(2)
+          margin-left: 8px
+
+  #experiences
+    .expr-block
+      margin-bottom: 36px
+      .expr-title-block
+        margin-bottom: 8px
+        .expr-title
+          font-size: 1.3em
+          font-weight: bold
+        .expr-duration
+          float: right
+          font-size: 14px
+          font-style: italic
+      .expr-whatido-block
+        margin-bottom: 8px
+        list-style-type: decimal
+        .expr-whatido
+          line-height: 1.3em
+          font-size: 18px
+          margin-bottom: 6px
+      .expr-tech-stack-block
+        margin-left: 8px
+        .expr-tech-stack-title
+          display: inline-block
+        .expr-tech-stack
+          font-size: 16px
+          &:not(:last-child)::after
+            content: '、'
+      
+  #educations
+    .edu-block
+      margin-bottom: 36px
+      .edu-title-block
+        margin-bottom: 8px
+        .edu-title
+            font-size: 1.3em
+            font-weight: bold
+        .edu-duration
+          float: right
+          font-size: 14px
+          font-style: italic
+      .edu-descp
+        margin-left: 8px
+        font-size: 14px
