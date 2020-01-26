@@ -40,6 +40,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: 'index.pug',
       filename: 'index.html',
+      favicon: './imgs/favicon.ico',
       i18n: {
         ...tw
       }
@@ -48,6 +49,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: 'index.pug',
       filename: 'index.en.html',
+      favicon: './imgs/favicon.ico',
       i18n: {
         ...en
       }

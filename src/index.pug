@@ -1,4 +1,5 @@
 - var lang = self.htmlWebpackPlugin.options.i18n.lang
+- var root = '/resume'
 
 html
   head
@@ -7,13 +8,12 @@ html
     meta(name="author", content="Ricky Hsieh")
     meta(name="description", content="Ricky Hsieh's resume")
     meta(name="keywords", content="Ricky Hsieh, Chen-Yuan Hsieh, resume, software engineer, frontend engineer, 謝禎原, 履歷, 軟體工程師, 前端工程師")
-    link(rel="shortcut icon" href="favicon.ico")
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css')
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css')
   body
     div(id="toolbar")
-      a(href='/#') 中文
-      a(href='/index.en.html') English
+      a(href=root + '/#') 中文
+      a(href=root + '/index.en.html') English
       div(class="print-btn" onclick="window.print(); return false;")
         i(class="fas fa-print")
 
