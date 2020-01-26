@@ -97,7 +97,7 @@ module.exports = {
       major: 'Computer Science',
       degree: 'Master of Engineering',
       duration: '2016.09 - 2018.07',
-      lab: 'Hyper reality lab',
+      lab: 'Human-Computer Interaction lab',
       advisor: 'Advisor: Dr. Liwei Chan'
     },
     {
