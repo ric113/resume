@@ -4,7 +4,7 @@
   "description": "ricky's resume",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "dev": "NODE_ENV=dev webpack-dev-server",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "yarn build && node deploy.js"

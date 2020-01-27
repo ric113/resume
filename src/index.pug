@@ -1,5 +1,8 @@
 - var lang = self.htmlWebpackPlugin.options.i18n.lang
-- var root = '/resume'
+- var env = self.htmlWebpackPlugin.options.env
+- var PROD_ROOT = '/resume'
+- var DEV_ROOT = ''
+- var root = env === 'dev' ? DEV_ROOT : PROD_ROOT
 
 html
   head
@@ -25,8 +28,8 @@ html
       - var socials = self.htmlWebpackPlugin.options.i18n.socials
       div(class="left-block")
         div(class="names")
-          h1= name
-          h4= enName
+          h1(class="cn-name")= name
+          h4(class="en-name")= enName
         h5(class="job") #{job} @ Taiwan
       ul(class="right-block")
         each social in socials
@@ -40,7 +43,7 @@ html
       h2(class="title")= skillTitle
       each skill in skills
         div(class="skill-block")
-          h3(class="sub-title")= skill.category
+          span(class="sub-title")= skill.category
           each entry in skill.entries
             span(class="skill-entry")= entry
 

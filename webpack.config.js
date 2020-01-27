@@ -43,7 +43,8 @@ module.exports = {
       favicon: './imgs/favicon.ico',
       i18n: {
         ...tw
-      }
+      },
+      env: process.env.NODE_ENV
     }),
 
     new HtmlWebPackPlugin({
@@ -52,7 +53,8 @@ module.exports = {
       favicon: './imgs/favicon.ico',
       i18n: {
         ...en
-      }
+      },
+      env: process.env.NODE_ENV
     }),
     
     new MiniCssExtractPlugin({
