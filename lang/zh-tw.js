@@ -30,7 +30,8 @@ module.exports = {
     {
       category: 'Frontend',
       entries: [
-        'javascript(ES5+)',
+        'JavaScript(ES5+)',
+        'TypeScript',
         'React',
         'redux',
         'HTML/CSS'
@@ -50,7 +51,8 @@ module.exports = {
         'git',
         'unix-like OS',
         'jest',
-        'docker'
+        'docker',
+        'CI/CD (CircleCI)'
       ]
     }
   ],
@@ -62,12 +64,13 @@ module.exports = {
       job: 'Frontend engineer',
       duration: '2019.10 - now',
       whatIDo: [
-        '主要參與台灣股市、會員中心好朋友計畫、運動 web app. 需求開發'
+        '主要參與台灣股市、台灣運動以及會員中心好朋友計畫 web app. 需求開發'
         // '參與股市 web app 的改版，依需求開發新的元件、串接 API 並撰寫測試',
         // 'migrate 共用的 services，降低維護時所需的成本',
+        // 重構舊有的共用模組，同時支援新的 feature 且能向後相容,
         // '開發 Member Get Member 活動頁面'
       ],
-      techStack: ['React', 'SSR', 'flux', 'atomicCSS', 'nodejs', 'jest']
+      techStack: ['React', 'TypeScript', 'SSR', 'flux', 'atomicCSS', 'nodejs', 'jest']
     },
     {
       company: '17 Media',
@@ -78,7 +81,7 @@ module.exports = {
         '協助重構組內 dashboard，引入 UI framework，避免重複造輪子',
         '參與製作活動編輯器，負責榜單元件，透過只渲染可視範圍的資訊以及資料分批載入來優化上萬筆資料的榜單'
       ],
-      techStack: ['typescript', 'React', 'styled-component', 'react-router', 'antd', 'nodejs', 'SQL', 'mongoDB']
+      techStack: ['React', 'TypeScript', 'styled-component', 'react-router', 'antd', 'nodejs', 'SQL', 'mongoDB']
     },
     {
       company: 'OpenHCI 工作坊',

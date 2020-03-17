@@ -29,7 +29,8 @@ module.exports = {
     {
       category: 'Frontend',
       entries: [
-        'javascript(ES5+)',
+        'Javascript(ES5+)',
+        'Typescript',
         'React',
         'redux',
         'HTML/CSS'
@@ -49,7 +50,8 @@ module.exports = {
         'git',
         'unix-like OS',
         'jest',
-        'docker'
+        'docker',
+        'CI/CD (CircleCI)'
       ]
     }
   ],
@@ -61,12 +63,12 @@ module.exports = {
       job: 'Frontend engineer',
       duration: '2019.10 - now',
       whatIDo: [
-        'Taiwan\'s stock, loyalty program of membership and sports pages'
+        'Participation in developing Taiwan\'s stock, sports pages and loyalty program of membership'
         // 'develop components, api concatenation and writing unit test for new stock app',
         // 'migrate shared services, in order to reduce cost of maintenance',
         // 'develop Member Get Member campaign page'
       ],
-      techStack: ['React', 'SSR', 'flux', 'atomicCSS', 'nodejs', 'jest']
+      techStack: ['React', 'Typescript', 'SSR', 'flux', 'atomicCSS', 'nodejs', 'jest']
     },
     {
       company: '17 Media',
@@ -77,7 +79,7 @@ module.exports = {
         'refactor our team\'s dashboard with UI framework, avoid reinventing the wheel',
         'optimize leaderboard component in campaign editor with partial rendering and data lazy loading'
       ],
-      techStack: ['typescript', 'React', 'styled-component', 'react-router', 'antd', 'nodejs', 'SQL', 'mongoDB']
+      techStack: ['React', 'Typescript', 'styled-component', 'react-router', 'antd', 'nodejs', 'SQL', 'mongoDB']
     },
     {
       company: 'OpenHCI workshop',
