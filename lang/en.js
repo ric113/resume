@@ -51,7 +51,7 @@ module.exports = {
         'unix-like OS',
         'jest',
         'docker',
-        'CI/CD (CircleCI)'
+        'CI/CD'
       ]
     }
   ],
