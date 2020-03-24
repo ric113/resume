@@ -83,7 +83,7 @@ module.exports = {
     },
     {
       company: 'OpenHCI workshop',
-      job: 'Web service',
+      job: 'Web service volunteer',
       duration: '2017.03 - 2017.07',
       whatIDo: [
         'develop official website'

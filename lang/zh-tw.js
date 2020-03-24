@@ -85,7 +85,7 @@ module.exports = {
     },
     {
       company: 'OpenHCI 工作坊',
-      job: 'Web service',
+      job: 'Web service volunteer',
       duration: '2017.03 - 2017.07',
       whatIDo: [
         '負責官方網頁的製作'
