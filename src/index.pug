@@ -45,8 +45,9 @@ html
       each skill in skills
         div(class="skill-block")
           span(class="sub-title")= skill.category
-          each entry in skill.entries
-            span(class="skill-entry")= entry
+          ul(class="skill-list")
+            each entry in skill.entries
+              li(class="skill-entry")= entry
 
     section(id='experiences')
       - var experiences = self.htmlWebpackPlugin.options.i18n.experiences
