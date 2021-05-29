@@ -13,7 +13,7 @@ module.exports = {
     },
     {
       // gmail
-      iconClass: "far fa-envelope",
+      iconClass: "fas fa-envelope-square",
       text: "ric1134991@gmail.com",
       link: "mailto:ric1134991@gmail.com",
     },
@@ -34,13 +34,13 @@ module.exports = {
         "Typescript",
         "React",
         "redux",
-        "GraphQL(Apollo-client)",
+        "GraphQL(apollo-client)",
         "HTML/CSS",
       ],
     },
     {
       category: "Backend",
-      entries: ["nodejs", "SQL", "mongoDB"],
+      entries: ["Node.js", "SQL", "mongoDB"],
     },
     {
       category: "Others",
@@ -63,17 +63,18 @@ module.exports = {
       ],
       techStack: [
         "React",
-        "nodeJS",
-        "Fluxible",
+        "Node.js",
+        "fluxible",
         "Chart.js",
         "ATS",
-        "Docker",
-        "Jest/Mocha/Protractor",
-        "AtomicCSS",
+        "docker",
+        "jest/mocha/protractor",
+        "atomicCSS",
         "webpack",
         "babel",
         "grunt",
-        "Lua"
+        "Lua",
+        "Screwdriver"
       ],
     },
     {
@@ -91,7 +92,7 @@ module.exports = {
         "styled-component",
         "react-router",
         "antd",
-        "nodejs",
+        "Node.js",
         "SQL",
         "mongoDB",
       ],
@@ -131,7 +132,7 @@ module.exports = {
         "開發靜態頁面，其中包含了一些 DOM 動畫",
         "與兩位工程師合作",
       ],
-      techStack: ["GSAP", "ScrollMagic"],
+      techStack: ["GSAP", "scrollMagic"],
     },
   ],
   // educations
@@ -142,7 +143,7 @@ module.exports = {
       major: "資訊工程所",
       degree: "碩士",
       duration: "2016.09 - 2018.07",
-      lab: "人機互動實驗室",
+      lab: "@人機互動實驗室",
     },
     {
       school: "國立中興大學",
