@@ -1,112 +1,153 @@
 module.exports = {
-  lang: 'en',
-  name: 'Chen-Yuan Hsieh',
-  enName: 'Ricky Hsieh',
-  job: 'Software engineer',
+  lang: "en",
+  name: "Chen-Yuan Hsieh",
+  enName: "Ricky Hsieh",
+  job: "Software engineer",
   socials: [
     {
       // linkedin
-      iconClass: 'fab fa-linkedin',
-      text: 'Ricky Hsieh',
-      link: 'https://www.linkedin.com/in/ricky-hsieh-992473139/'
-    }, 
+      iconClass: "fab fa-linkedin",
+      text: "Ricky Hsieh",
+      link: "https://www.linkedin.com/in/ricky-hsieh-992473139/",
+    },
     {
       // gmail
-      iconClass: 'far fa-envelope',
-      text: 'ric1134991@gmail.com',
-      link: 'mailto:ric1134991@gmail.com'
+      iconClass: "far fa-envelope",
+      text: "ric1134991@gmail.com",
+      link: "mailto:ric1134991@gmail.com",
     },
     {
       // github
-      iconClass: 'fab fa-github-square',
-      text: 'ric113',
-      link: 'https://github.com/ric113'
-    }
+      iconClass: "fab fa-github-square",
+      text: "ric113",
+      link: "https://github.com/ric113",
+    },
   ],
   // skills
-  skillTitle: 'Skills',
+  skillTitle: "Skills",
   skills: [
     {
-      category: 'Frontend',
+      category: "Frontend",
       entries: [
-        'Javascript(ES5+)',
-        'Typescript',
-        'React',
-        'redux',
-        'HTML/CSS'
-      ]
+        "Javascript(ES5+)",
+        "Typescript",
+        "React",
+        "redux",
+        "GraphQL(Apollo-client)",
+        "HTML/CSS",
+      ],
     },
     {
-      category: 'Backend',
-      entries: [
-        'nodejs',
-        'SQL',
-        'mongoDB'
-      ]
+      category: "Backend",
+      entries: ["nodejs", "SQL", "mongoDB"],
     },
     {
-      category: 'Others',
-      entries: [
-        'git',
-        'unix-like OS',
-        'jest',
-        'docker',
-        'CI/CD'
-      ]
-    }
+      category: "Others",
+      entries: ["git", "unix-like OS", "jest", "docker", "CI/CD"],
+    },
   ],
   // experiences
-  experienceTitle: 'Experiences',
+  experienceTitle: "Experiences",
   experiences: [
     {
-      company: 'Verizon media - Yahoo',
-      job: 'Frontend engineer',
-      duration: '2019.10 - now',
+      company: "Verizon media - Yahoo",
+      job: "Frontend engineer",
+      duration: "2019.10 - now",
       whatIDo: [
-        'Participation in developing Taiwan\'s stock, sports pages and loyalty program of membership'
-        // 'develop components, api concatenation and writing unit test for new stock app',
-        // 'migrate shared services, in order to reduce cost of maintenance',
-        // 'develop Member Get Member campaign page'
+        "revamp and maintain Taiwan finance website (from php to React with server-side-rendering), includes desktop and mobile web version",
+        "develop and maintain Taiwan/Hong-Kong membership loyalty program's WebView",
+        "optimize loading performance by chunks splitting, modern browsers build and tree-shaking",
+        "write unit/integration/E2E testing and enhance E2E testing scripts to make it more stable",
+        "develop ATS (Apache Traffic Server) to handle incoming requests",
       ],
-      techStack: ['React', 'Typescript', 'SSR', 'flux', 'atomicCSS', 'nodejs', 'jest']
+      techStack: [
+        "React",
+        "nodeJS",
+        "Fluxible",
+        "Chart.js",
+        "ATS",
+        "Docker",
+        "Jest/Mocha/Protractor",
+        "AtomicCSS",
+        "webpack",
+        "babel",
+        "grunt",
+        "Lua",
+      ],
     },
     {
-      company: '17 Media',
-      job: 'Frontend engineer',
-      duration: '2018.08 - 2019.07',
+      company: "17 Media",
+      job: "Frontend engineer",
+      duration: "2018.08 - 2019.07",
       whatIDo: [
-        'develop about 50 campaign pages (include 4 big-scale campaign pages), including UI rendering in frontend, data processing and API implementation in backend',
-        'refactor our team\'s dashboard with UI framework, avoid reinventing the wheel',
-        'optimize leaderboard component in campaign editor with partial rendering and data lazy loading'
+        "develop about 50 campaign pages (include 4 big-scale campaign pages), including UI rendering in frontend, data processing and API implementation in backend",
+        "refactor our team's dashboard with UI framework",
+        "optimize leaderboard component in campaign editor with partial rendering and data lazy loading",
       ],
-      techStack: ['React', 'Typescript', 'styled-component', 'react-router', 'antd', 'nodejs', 'SQL', 'mongoDB']
+      techStack: [
+        "React",
+        "Typescript",
+        "styled-component",
+        "react-router",
+        "antd",
+        "nodejs",
+        "SQL",
+        "mongoDB",
+      ],
+    },
+  ],
+  // projects
+  projectTitle: "Projects",
+  projects: [
+    {
+      name: "Ecoco's member management system",
+      descriptions: [
+        "develop authority management and change-log pages",
+        "add shared components into storybook",
+        "work with three engineers and one designer",
+      ],
+      techStack: [
+        "Next.js",
+        "Typescript",
+        "emotion",
+        "apollo-client",
+        "storybook",
+      ],
     },
     {
-      company: 'OpenHCI workshop',
-      job: 'Web service volunteer',
-      duration: '2017.03 - 2017.07',
-      whatIDo: [
-        'develop official website'
+      name: "6DOF object tracking",
+      demoLink: "https://www.youtube.com/watch?v=bjM2IdMUuD4",
+      descriptions: [
+        "develop an object tracking system on web",
+        "detect object with ar-markers by device camera and calculate its position and rotation",
       ],
-      techStack: ['GSAP', 'scrollMagic']
-    }
+      techStack: ["ar.js", "three.js"],
+    },
+    {
+      name: "OpenHCI'2017 official website",
+      demoLink: "http://www.openhci.com/2017/index.html",
+      descriptions: [
+        "develop static website with some DOM animations",
+        "work with two engineers",
+      ],
+      techStack: ["GSAP", "ScrollMagic"],
+    },
   ],
   // educations
-  educationTitle: 'Education',
+  educationTitle: "Education",
   educations: [
     {
-      school: 'National Chiao Tung University',
-      major: 'Computer Science',
-      degree: 'Master of Engineering',
-      duration: '2016.09 - 2018.07',
-      lab: 'Human-Computer Interaction lab',
-      advisor: 'Advisor: Dr. Liwei Chan'
+      school: "National Chiao Tung University",
+      major: "Computer Science",
+      degree: "Master of Engineering",
+      duration: "2016.09 - 2018.07",
+      lab: "Human-Computer Interaction lab",
     },
     {
-      school: 'National Chung Hsing University',
-      major: 'Computer Science',
-      degree: 'Bachelor of Engineering',
-      duration: '2012.09 - 2016.06',
-    }
-  ]
-}
+      school: "National Chung Hsing University",
+      major: "Computer Science",
+      degree: "Bachelor of Engineering",
+      duration: "2012.09 - 2016.06",
+    },
+  ],
+};

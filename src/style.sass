@@ -1,12 +1,46 @@
 $BREAK_POINT: 450px;
+
+$BACKGROUND_LIGHT: #FFF;
+$COLOR_MAIN_LIGHT: #232a31;
+$COLOR_SECONDARY_LIGHT: #888;
+
+$BACKGROUND_DARK: rgba(27,27,27,1);
+$COLOR_MAIN_DARK: #b4b2b2;
+$COLOR_SECONDARY_DARK: #888686;
+
+
   
 body
   position: relative
   width: 90%
   max-width: 800px
   margin: 48px auto
-  color: rgb(61, 62, 66) 
 
+  &[data-theme="light"]
+    color: $COLOR_MAIN_LIGHT 
+    background-color: $BACKGROUND_LIGHT 
+
+    section
+      *
+        border-bottom-color: $COLOR_MAIN_DARK
+      .title
+        &::after 
+          background: $COLOR_MAIN_LIGHT
+      .content
+        color: $COLOR_SECONDARY_LIGHT
+
+  &[data-theme="dark"]
+    color: $COLOR_MAIN_DARK
+    background-color: $BACKGROUND_DARK
+
+    section
+      *
+        border-bottom-color: $COLOR_MAIN_DARK
+      .title
+        &::after 
+          background: $COLOR_MAIN_DARK
+      .content
+        color: $COLOR_SECONDARY_DARK
 
   h1, h2, h3, h4, h5
     margin: 0
@@ -35,7 +69,6 @@ body
         top: 27px
         width: 8px
         height: 8px
-        background: rgb(61, 62, 66)
         border-radius: 4px
     
     .sub-title
@@ -43,9 +76,6 @@ body
       font-size: 1.3em
       font-weight: bold
       margin-bottom: 2px
-
-    .content
-      color: #888
 
   #toolbar
     position: absolute
@@ -56,6 +86,8 @@ body
     top: -48px
     background: rgb(61, 62, 66)
 
+    i
+      color: #fff
     a
       padding: 4px
       margin: 3px 2px
@@ -65,11 +97,41 @@ body
 
       &:last-child
         border-right: 0
+
     .print-btn
       cursor: pointer
       i 
-        padding: 4px
-        color: #fff
+        padding: 4px   
+
+    .switch-container
+      display: flex
+      align-items: center
+      margin-left: 36px
+      margin-right: 4px
+
+      i
+        font-size: 14px
+        &:first-child
+          margin-right: 4px
+        &:last-child
+          margin-left: 4px
+
+      .switch
+        display: flex
+        align-items: center
+        padding: 0 1px
+        width: 32px
+        height: 16px
+        box-sizing: border-box
+        border-radius: 8px
+        border: 2px solid #fff
+        cursor: pointer
+        
+        div
+          width: 10px
+          height: 10px
+          background-color: #fff  
+          border-radius: 5px
 
     @media print   
       display: none !important
@@ -92,7 +154,7 @@ body
         align-items: flex-end
         padding-bottom: 3px
         margin-bottom: 3px
-        border-bottom: 1px solid black
+        border-bottom: 1px solid
         > *
           margin: 0 4px
 
@@ -149,6 +211,7 @@ body
           float: right
           font-size: 14px
           font-style: italic
+          line-height: 28px
       .expr-whatido-block
         margin-bottom: 8px
         list-style-type: decimal
@@ -166,7 +229,35 @@ body
           font-size: 16px
           &:not(:last-child)::after
             content: '、'
-      
+  
+  #projects
+    .proj-block
+      margin-bottom: 36px
+      .proj-title
+        margin-bottom: 8px
+        font-size: 1.3em
+        font-weight: bold
+        a
+          margin-left: 8px
+          font-size: 16px
+      .proj-descriptions-block
+        margin-bottom: 8px
+        list-style-type: circle
+        .proj-descriptions
+          line-height: 1.3em
+          font-size: 18px
+          margin-bottom: 6px
+      .proj-tech-stack-block
+        display: flex
+        flex-wrap: wrap
+        margin-left: 8px
+        .proj-tech-stack-title
+          display: inline-block
+        .proj-tech-stack
+          font-size: 16px
+          &:not(:last-child)::after
+            content: '、'
+
   #educations
     .edu-block
       margin-bottom: 36px

@@ -20,6 +20,11 @@ html
       a(href=root + '/index.en.html') English
       div(class="print-btn" onclick="window.print(); return false;")
         i(class="fas fa-print")
+      div(class="switch-container")
+        i(class="fas fa-sun")
+        div(class="switch")
+          div
+        i(class="fas fa-moon")
 
     section(id='profile')
       - var name = self.htmlWebpackPlugin.options.i18n.name
@@ -68,6 +73,24 @@ html
             h4(class="expr-tech-stack-title") tech. stack：
             each techStack in experience.techStack
               span(class="expr-tech-stack")= techStack
+    
+    section(id='projects')
+      - var projects = self.htmlWebpackPlugin.options.i18n.projects
+      - var projectTitle = self.htmlWebpackPlugin.options.i18n.projectTitle
+      h2(class="title")= projectTitle
+      each project in projects
+        div(class="proj-block")
+          div(class="proj-title") #{project.name}
+            if project.demoLink
+              a(href=project.demoLink)
+                i(class="fas fa-link")
+          ul(class="proj-descriptions-block")
+            each description in project.descriptions
+              li(class="proj-descriptions content")= description
+          div(class="proj-tech-stack-block")
+            h4(class="proj-tech-stack-title") tech. stack：
+            each techStack in project.techStack
+              span(class="proj-tech-stack")= techStack
 
     section(id='educations')
       - var educations = self.htmlWebpackPlugin.options.i18n.educations
@@ -81,6 +104,6 @@ html
             else
               span(class="edu-title") #{education.school} #{education.major} - #{education.degree}
             span(class="edu-duration")= education.duration
-          if education.lab && education.advisor
-            p(class="edu-descp content") #{education.lab} - #{education.advisor}
+          if education.lab
+            p(class="edu-descp content") #{education.lab} 
     
