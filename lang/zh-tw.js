@@ -55,8 +55,8 @@ module.exports = {
       job: "前端工程師",
       duration: "2019.10 - now",
       whatIDo: [
-        "改版台灣股市頁 (從 php 到 server-side-rendering React)，包含了電腦與手機版",
-        "開發並維護台灣/香港會員中心好朋友計畫 WebView",
+        "改版 Yahoo! 台灣股市頁 (從 php 到 server-side-rendering React)，包含了電腦與手機版",
+        "開發並維護 Yahoo! 台灣/香港會員中心好朋友計畫 WebView",
         "透過 chunks splitting、modern browsers build 以及 tree-shaking 機制來優化網頁載入速度",
         "撰寫單元/整合/E2E 測試，並優化 E2E 測試，以提升測試穩定度",
         "撰寫 ATS (Apache Traffic Server) 規則來處理路由",
@@ -82,7 +82,7 @@ module.exports = {
       job: "前端工程師",
       duration: "2018.08 - 2019.07",
       whatIDo: [
-        "開發活動頁面，包括前端頁面呈現，以及後端資料處理與活動 API 實作，一共開發了約 50 個活動頁，其中包含了 4 個大型活動",
+        "開發活動頁 (WebViews)，包括前端頁面呈現，以及後端資料處理與活動 API 實作，一共開發了約 50 個活動頁，其中包含了 4 個大型活動",
         "協助重構組內 dashboard，引入 UI framework，避免重複造輪子",
         "參與製作活動編輯器，負責榜單元件，透過只渲染可視範圍的資訊以及資料分批載入來優化上萬筆資料的榜單",
       ],
@@ -115,15 +115,6 @@ module.exports = {
         "apollo-client",
         "storybook",
       ],
-    },
-    {
-      name: "6DOF 物體偵測",
-      demoLink: "https://www.youtube.com/watch?v=bjM2IdMUuD4",
-      descriptions: [
-        "開發可以追蹤物體的網頁",
-        "透過裝置相機搭配 ar-markers 計算出物件位置以及旋轉角度",
-      ],
-      techStack: ["ar.js", "three.js"],
     },
     {
       name: "OpenHCI'2017 官方網站",
