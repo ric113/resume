@@ -51,12 +51,12 @@ module.exports = {
   experienceTitle: "經歷",
   experiences: [
     {
-      company: "Verizon Media - Yahoo",
+      company: "Yahoo (Verizon Media)",
       job: "前端工程師",
       duration: "2019.10 - now",
       whatIDo: [
-        "改版 Yahoo! 台灣股市頁 (從 php 到 server-side-rendering React)，包含了電腦與手機版",
-        "開發並維護 Yahoo! 台灣/香港會員中心好朋友計畫 WebView",
+        "改版 Yahoo 台灣股市頁 (從 php 到 server-side-rendering React)，包含了電腦與手機版",
+        "開發並維護 Yahoo 台灣/香港會員中心好朋友計畫 WebView",
         "開發並維護 biz-connect 系統供內部與外部人員使用",
         "透過 chunks splitting、modern browsers build 以及 tree-shaking 機制來優化網頁載入速度",
         "撰寫單元/整合/E2E 測試，並優化 E2E 測試，以提升測試穩定度",

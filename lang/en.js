@@ -50,13 +50,13 @@ module.exports = {
   experienceTitle: "Experiences",
   experiences: [
     {
-      company: "Verizon Media - Yahoo",
+      company: "Yahoo (Verizon Media)",
       job: "Frontend engineer",
       duration: "2019.10 - now",
       whatIDo: [
-        "Revamp and maintain Yahoo! Taiwan Finance website (from php to React with server-side rendering), including desktop and mobile web version",
-        "Develop and maintain WebView for Yahoo! Taiwan and Hong-Kong membership loyalty program",
-        "Develop and maintain biz-connect systems for internal users and external collaborators，both of them are written by React",
+        "Revamp and maintain Yahoo Taiwan Finance website (from php to React with server-side rendering), including desktop and mobile web version",
+        "Develop and maintain WebView for Yahoo Taiwan and Hong-Kong membership loyalty program",
+        "Develop and maintain biz-connect systems for internal users and external collaborators, both of them are written by React",
         "Optimize loading performance by chunks splitting, modern browsers build and tree-shaking",
         "Write unit/integration/E2E test and enhance E2E testing scripts to make it more stable",
         "Define ATS (Apache Traffic Server) rules to handle incoming requests",
