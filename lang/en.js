@@ -50,7 +50,7 @@ module.exports = {
   experienceTitle: "Experiences",
   experiences: [
     {
-      company: "Verizon media - Yahoo",
+      company: "Verizon Media - Yahoo",
       job: "Frontend engineer",
       duration: "2019.10 - now",
       whatIDo: [
