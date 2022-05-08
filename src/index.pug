@@ -65,10 +65,7 @@ html
       each experience in experiences
         div(class="expr-block")
           div(class="expr-title-block") 
-            if lang === 'en'
-              span(class="expr-title") #{experience.job} @ #{experience.company}, Taiwan
-            else
-              span(class="expr-title") #{experience.job} @ #{experience.company}
+            span(class="expr-title") #{experience.job} @ #{experience.company} (#{experience.place})
             span(class="expr-duration")= experience.duration
           ul(class="expr-whatido-block")
             each whatIDo in experience.whatIDo
