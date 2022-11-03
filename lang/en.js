@@ -52,7 +52,7 @@ module.exports = {
           title:
             "Decouple team’s apps from a monolith project by using micro-frontend infrastructure and building our own API server, with independent release pipeline, tech stack and development flow",
           details: [
-            "reduce the CI/CD time (seeing the changes reflect on the stg. or prod.) about 50%",
+            "reduce about 50% of the CI/CD time (seeing the changes reflect on the stg. or prod.)",
             "reduce time to see the changes showing on the page each save from ~20s to ~4s during local development",
           ],
         },
