@@ -28,16 +28,8 @@ module.exports = {
   skillTitle: "技能",
   skills: [
     {
-      category: "Frontend",
-      entries: [
-        "Javascript(ES5+)",
-        "Typescript",
-        "React",
-      ],
-    },
-    {
-      category: "Backend",
-      entries: ["Node.js", "SQL", "mongoDB"],
+      category: "Frontend & Backend",
+      entries: ["Javascript(ES5+)", "Typescript", "React", "Node.js", "SQL", "mongoDB"],
     },
     {
       category: "Others",

@@ -42,17 +42,17 @@ module.exports = {
       filename: 'index.html',
       favicon: './imgs/favicon.ico',
       i18n: {
-        ...tw
+        ...en
       },
       env: process.env.NODE_ENV
     }),
 
     new HtmlWebPackPlugin({
       template: 'index.pug',
-      filename: 'index.en.html',
+      filename: 'index.tw.html',
       favicon: './imgs/favicon.ico',
       i18n: {
-        ...en
+        ...tw
       },
       env: process.env.NODE_ENV
     }),

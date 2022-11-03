@@ -20,8 +20,8 @@ html
     script(async, src='https://www.googletagmanager.com/gtag/js?id=UA-158624586-1')
   body
     div(id="toolbar")
-      a(href=root + '/#') 中文
-      a(href=root + '/index.en.html') English
+      //- a(href=root + '/#') 中文
+      //- a(href=root + '/index.en.html') English
       div(class="print-btn" onclick="window.print(); return false;")
         i(class="fas fa-print")
       div(class="switch-container")
@@ -69,7 +69,11 @@ html
             span(class="expr-duration")= experience.duration
           ul(class="expr-whatido-block")
             each whatIDo in experience.whatIDo
-              li(class="expr-whatido content")= whatIDo
+              li(class="expr-whatido content")= whatIDo.title
+                if whatIDo.details
+                  each detail in whatIDo.details
+                    ul(class="expr-whatido-detail")
+                      li=detail
           div(class="expr-tech-stack-block")
             h4(class="expr-tech-stack-title") tech. stack：
             each techStack in experience.techStack

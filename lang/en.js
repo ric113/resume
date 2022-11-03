@@ -27,12 +27,8 @@ module.exports = {
   skillTitle: "Skills",
   skills: [
     {
-      category: "Frontend",
-      entries: ["Javascript(ES5+)", "Typescript", "React"],
-    },
-    {
-      category: "Backend",
-      entries: ["Node.js", "SQL", "mongoDB"],
+      category: "Frontend & Backend",
+      entries: ["Javascript(ES5+)", "Typescript", "React", "Node.js", "SQL", "mongoDB"],
     },
     {
       category: "Others",
@@ -48,9 +44,29 @@ module.exports = {
       place: "remote",
       duration: "2021.10 - now",
       whatIDo: [
-        "Develop and maintain a “nocode” website service, including the site editor and renderer which serves millions of traffic per month",
-        "Introduce mono-repo to our team's projects (with 5+ apps and 5+ libs) for better developer experience",
-        "Decouple team's project from a monolith core project by using micro-frontend structure with independent release pipeline, tech stack and development flow",
+        {
+          title:
+            "Develop and maintain a “nocode” website service, including the website editor, the site renderer and related admin tools",
+        },
+        {
+          title:
+            "Decouple team’s apps from a monolith project by using micro-frontend infrastructure and building our own API server, with independent release pipeline, tech stack and development flow",
+          details: [
+            "reduce the CI/CD time (seeing the changes reflect on the stg. or prod.) about 50%",
+            "reduce time to see the changes showing on the page each save from ~20s to ~4s during local development",
+          ],
+        },
+        {
+          title:
+            "Introduce mono-repo to our team's projects (with 5+ apps and 5+ libs) for better developer experience",
+          details: [
+            "better file structure, co-locate related files",
+            "reduce the average CI time by running only affected apps and libs",
+          ],
+        },
+        {
+          title: "Mentoring new team members",
+        },
       ],
       techStack: [
         "React",
@@ -59,6 +75,7 @@ module.exports = {
         "Next.js",
         "styled-components",
         "Node.js",
+        "storybook",
         "jest/testing-library/cypress",
         "docker",
         "k8s",
@@ -79,11 +96,27 @@ module.exports = {
       job: "Frontend engineer",
       duration: "2019.10 - 2021.10",
       whatIDo: [
-        "Revamp and maintain Yahoo Taiwan Finance website (from php to React with server-side rendering), including desktop and mobile web version",
-        "Develop and maintain WebView for Yahoo Taiwan and Hong-Kong membership loyalty program",
-        "Develop and maintain biz-connect systems for internal users and external collaborators, both of them are written by React",
-        "Optimize loading performance by chunks splitting, modern browsers build and tree-shaking",
-        "Write unit/integration/E2E test and enhance E2E testing scripts to make it more stable",
+        {
+          title:
+            "Revamp and maintain Yahoo Taiwan Finance website (from php to React with server-side rendering), including desktop and mobile web version",
+        },
+        {
+          title:
+            "Develop and maintain WebView for Yahoo Taiwan and Hong-Kong membership loyalty program",
+        },
+        {
+          title:
+            "Develop and maintain biz-connect systems for internal users and external collaborators, both of them are written by React",
+        },
+        {
+          title:
+            "Optimize loading performance by chunks splitting, modern browsers build and tree-shaking",
+          details: ["reduce 30% of gzipped JS size"],
+        },
+        {
+          title:
+            "Write unit/integration/E2E test and enhance E2E testing scripts to make it more stable",
+        },
       ],
       techStack: [
         "React",
@@ -107,9 +140,17 @@ module.exports = {
       place: "Taiwan",
       duration: "2018.08 - 2019.07",
       whatIDo: [
-        "Develop about 50 campaign WebViews (include 4 big-scale campaign pages), from frontend UI rendering to backend data processing and API implementation",
-        "Refactor and improve team's dashboard with UI framework",
-        "Optimize leaderboard component in campaign editor with partial rendering and data lazy loading",
+        {
+          title:
+            "Develop about 50 campaign WebViews (include 4 big-scale campaign pages), from frontend UI rendering to backend data processing and API implementation",
+        },
+        {
+          title: "Refactor and improve team's dashboard with UI framework",
+        },
+        {
+          title:
+            "Optimize leaderboard component in campaign editor with partial rendering and data lazy loading",
+        },
       ],
       techStack: [
         "React",
