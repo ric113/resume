@@ -28,7 +28,7 @@ module.exports = {
   skills: [
     {
       category: "Frontend & Backend",
-      entries: ["Javascript(ES5+)", "Typescript", "React", "Node.js", "SQL", "mongoDB"],
+      entries: ["Javascript(ES5+)", "Typescript", "React", "Node.js", "SQL", "mongoDB", "GraphQL"],
     },
     {
       category: "Others",
@@ -75,6 +75,7 @@ module.exports = {
         "Next.js",
         "styled-components",
         "Node.js",
+        "GraphQL",
         "storybook",
         "jest/testing-library/cypress",
         "docker",
@@ -165,33 +166,33 @@ module.exports = {
     },
   ],
   // projects
-  projectTitle: "Projects",
-  projects: [
-    {
-      name: "Ecoco's member management system",
-      descriptions: [
-        "Develop authority management and change-log pages",
-        "Add shared components into storybook",
-        "Work with three engineers and one designer",
-      ],
-      techStack: [
-        "Next.js",
-        "Typescript",
-        "emotion",
-        "apollo-client",
-        "storybook",
-      ],
-    },
-    {
-      name: "OpenHCI'2017 official website",
-      demoLink: "http://www.openhci.com/2017/index.html",
-      descriptions: [
-        "Develop static website with some DOM animations",
-        "Work with two engineers",
-      ],
-      techStack: ["GSAP", "scrollMagic"],
-    },
-  ],
+  // projectTitle: "Projects",
+  // projects: [
+  //   {
+  //     name: "Ecoco's member management system",
+  //     descriptions: [
+  //       "Develop authority management and change-log pages",
+  //       "Add shared components into storybook",
+  //       "Work with three engineers and one designer",
+  //     ],
+  //     techStack: [
+  //       "Next.js",
+  //       "Typescript",
+  //       "emotion",
+  //       "apollo-client",
+  //       "storybook",
+  //     ],
+  //   },
+  //   {
+  //     name: "OpenHCI'2017 official website",
+  //     demoLink: "http://www.openhci.com/2017/index.html",
+  //     descriptions: [
+  //       "Develop static website with some DOM animations",
+  //       "Work with two engineers",
+  //     ],
+  //     techStack: ["GSAP", "scrollMagic"],
+  //   },
+  // ],
   // educations
   educationTitle: "Education",
   educations: [

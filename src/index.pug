@@ -79,23 +79,23 @@ html
             each techStack in experience.techStack
               span(class="expr-tech-stack")= techStack
     
-    section(id='projects')
-      - var projects = self.htmlWebpackPlugin.options.i18n.projects
-      - var projectTitle = self.htmlWebpackPlugin.options.i18n.projectTitle
-      h2(class="title")= projectTitle
-      each project in projects
-        div(class="proj-block")
-          div(class="proj-title") #{project.name}
-            if project.demoLink
-              a(href=project.demoLink)
-                i(class="fas fa-link")
-          ul(class="proj-descriptions-block")
-            each description in project.descriptions
-              li(class="proj-descriptions content")= description
-          div(class="proj-tech-stack-block")
-            h4(class="proj-tech-stack-title") tech. stack：
-            each techStack in project.techStack
-              span(class="proj-tech-stack")= techStack
+    //- section(id='projects')
+    //-   - var projects = self.htmlWebpackPlugin.options.i18n.projects
+    //-   - var projectTitle = self.htmlWebpackPlugin.options.i18n.projectTitle
+    //-   h2(class="title")= projectTitle
+    //-   each project in projects
+    //-     div(class="proj-block")
+    //-       div(class="proj-title") #{project.name}
+    //-         if project.demoLink
+    //-           a(href=project.demoLink)
+    //-             i(class="fas fa-link")
+    //-       ul(class="proj-descriptions-block")
+    //-         each description in project.descriptions
+    //-           li(class="proj-descriptions content")= description
+    //-       div(class="proj-tech-stack-block")
+    //-         h4(class="proj-tech-stack-title") tech. stack：
+    //-         each techStack in project.techStack
+    //-           span(class="proj-tech-stack")= techStack
 
     section(id='educations')
       - var educations = self.htmlWebpackPlugin.options.i18n.educations
