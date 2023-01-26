@@ -52,8 +52,8 @@ module.exports = {
           title:
             "Decouple team’s apps from a monolith project by using micro-frontend infrastructure and building our own API server, with independent release pipeline, tech stack and development flow",
           details: [
-            "reduce about 50% of the CI/CD time",
-            "reduce time to see the changes showing on the page each save from ~20s to ~4s during local development",
+            "reduce about <strong>50%</strong> of the CI/CD time",
+            "reduce time to see the changes showing on the page each save <strong>from ~20s to ~4s</strong> during local development",
           ],
         },
         {
@@ -78,7 +78,9 @@ module.exports = {
         "Next.js",
         "styled-components",
         "Node.js",
+        "Java",
         "GraphQL",
+        "MySQL",
         "storybook",
         "jest/testing-library/cypress",
         "docker",
@@ -115,7 +117,7 @@ module.exports = {
         {
           title:
             "Optimize loading performance by chunks splitting, modern browsers build and tree-shaking",
-          details: ["reduce 30% of gzipped JS size"],
+          details: ["reduce <strong>30%</strong> of gzipped JS size"],
         },
         {
           title:

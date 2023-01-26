@@ -69,11 +69,11 @@ html
             span(class="expr-duration")= experience.duration
           ul(class="expr-whatido-block")
             each whatIDo in experience.whatIDo
-              li(class="expr-whatido")= whatIDo.title
+              li(class="expr-whatido")!=whatIDo.title
                 if whatIDo.details
                   each detail in whatIDo.details
                     ul(class="expr-whatido-detail")
-                      li=detail
+                      li!=detail
           div(class="expr-tech-stack-block content")
             span(class="expr-tech-stack-title") tech. stack:&nbsp;
             each techStack in experience.techStack
