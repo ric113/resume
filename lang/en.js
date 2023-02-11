@@ -46,22 +46,22 @@ module.exports = {
       whatIDo: [
         {
           title:
-            "Develop and maintain a “nocode” website service, including the website editor, the site renderer and related admin tools",
+            "Develop and maintain a “nocode” website service, including website editor, site renderer and related admin tools",
         },
         {
           title:
-            "Decouple team’s apps from a monolith project by using micro-frontend infrastructure and building our own API server, with independent release pipeline, tech stack and development flow",
+            "Decouple team’s apps from a monolith project by using micro-frontend infrastructure, and building our own API server with independent release pipeline, tech stack and development flow",
           details: [
-            "reduce about <strong>50%</strong> of the CI/CD time",
-            "reduce time to see the changes showing on the page each save <strong>from ~20s to ~4s</strong> during local development",
+            "reduce up to <strong>50%</strong> of the CI/CD time",
+            "reduce <strong>80% (~20s to ~4s)</strong> page-changing time each save during local development",
           ],
         },
         {
           title:
-            "Introduce mono-repo to our team's projects (with 5+ apps and 5+ libs) for better developer experience",
+            "Introduce mono-repo to team's projects (with 5+ apps and 5+ libs) for better developer experience",
           details: [
             "better file structure, co-locate related files",
-            "reduce the average CI time by running only affected apps and libs",
+            "reduce average CI time by running only affected apps and libs",
           ],
         },
         {
