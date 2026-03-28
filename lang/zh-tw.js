@@ -54,27 +54,26 @@ module.exports = {
       whatIDo: [
         {
           title:
-            '負責多項治理業務 to-B/C 專案 (商家資質中心, 舉報中心, 知識產權管理與舉報中心以及達人 KYC 中心)',
-          details: [
-            '負責商家和達人側新開國(8個國家+)需求, 確保 TTS 平台符合當地法規',
-            '撰寫治理業務項目的 all-in-one 文檔, 其中包含了個項目的開發資訊、step-by-step 的開發環境建立到部署上線的流程, 讓新加入專案的同事能快速上手',
-          ],
+            'Architected Tiktok Shop seller qualification center related pages refactoring via regional abstraction and directory optimization, increased regional closure rate from 40% to 80%, ensuring region isolation and system stability',
         },
         {
           title:
-            '參與了多個治理平台 to-Ops 專案 (審核以及違規中心配置平台)',
-          details: [
-            '從 0 到 1 建立了審核配置平, 讓運營能透過該平台去配置客製化的審核策略；違規中心配置平台，讓運營能根據國家去配置不同的前台展示文案、規則 ... 等等',
-          ],
+            "Led the refactoring of the qualification center’s form system by building form components' library, integrating storybook for visual management and establishing a config-driven development model, significantly boosting R&D efficiency while paving the way for AI-assisted form generation",
         },
         {
-          title: 'Mentoring new join members',
-          details: [
-            "help with team's projects onboarding, task assigning and code reviewing",
-          ],
+          title:
+            'Acted as the POC to align with the infrastructure team for architectural migration to eliminate waterfall loading bottlenecks, achieving a 70% reduction in LCP p75 (to <5s) and a 50% improvement in CI/CD efficiency',
         },
+        {
+          title:
+            'Collaborated on team’s AI projects by processing 68k-documents for knowledge base for an AI Assistant and participated in development for a Spec-Driven-based AI Coding CLI',
+        },
+        {
+          title:
+            'Mentored colleagues by facilitating their onboarding, assisting with task allocation, and providing code reviews to ensure team alignment',
+        }
       ],
-      techStack: ['React', 'Typescript', 'styled-components', 'Node.js'],
+      techStack: ['React', 'Typescript', 'Node.js'],
     },
     {
       company: 'Houzz',

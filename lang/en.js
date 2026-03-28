@@ -54,27 +54,26 @@ module.exports = {
       whatIDo: [
         {
           title:
-            'Responsible for multiple to-B/C projects (seller qualification, report, IPR report & management and creator KYC) of GNE',
-          details: [
-            'working on both seller and creator sides new markets(8+) opening features, ensure that the TTS platform complies with local regulations',
-            "start and contribute to projects' all-in-one document, includes developing info. and step-by-step onboarding guide, make new joiners onboard smoothly",
-          ],
+            'Architected Tiktok Shop seller qualification center related pages refactoring via regional abstraction and directory optimization, increased regional closure rate from 40% to 80%, ensuring region isolation and system stability',
         },
         {
           title:
-            'Develop and maintain multiple to-Ops projects (moderation and violation center) of GNE',
-          details: [
-            'building configuration pages of moderation and violation center from scratch, for Ops to configure flow of moderation flow and violation pages wordings, images, rules ... etc.',
-          ],
+            "Led the refactoring of the qualification center’s form system by building form components' library, integrating storybook for visual management and establishing a config-driven development model, significantly boosting R&D efficiency while paving the way for AI-assisted form generation",
         },
         {
-          title: 'Mentoring new join members',
-          details: [
-            "help with team's projects onboarding, task assigning and code reviewing",
-          ],
+          title:
+            'Acted as the POC to align with the infrastructure team for architectural migration to eliminate waterfall loading bottlenecks, achieving a 70% reduction in LCP p75 (to <5s) and a 50% improvement in CI/CD efficiency',
+        },
+        {
+          title:
+            'Collaborated on team’s AI projects by processing 68k-documents for knowledge base for an AI Assistant and participated in development for a Spec-Driven-based AI Coding CLI',
+        },
+        {
+          title:
+            'Mentored colleagues by facilitating their onboarding, assisting with task allocation, and providing code reviews to ensure team alignment',
         },
       ],
-      techStack: ['React', 'Typescript', 'styled-components', 'Node.js'],
+      techStack: ['React', 'Typescript', 'Node.js'],
     },
     {
       company: 'Houzz',
