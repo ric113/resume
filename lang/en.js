@@ -54,7 +54,7 @@ module.exports = {
       whatIDo: [
         {
           title:
-            "Architect TikTok shop qualification center's regional architecture upgrade, increased regional closure rate from 40% to 80%, ensuring region isolation and system stability",
+            "Architect TikTok shop qualification center's regional architecture upgrade, increase regional closure rate from 40% to 80%, ensuring region isolation and system stability",
         },
         {
           title:
@@ -71,7 +71,7 @@ module.exports = {
         },
         {
           title:
-            "Contribute to AI projects, including a user-facing AI assistant and an internal AI coding CLI for engineers",
+            "Contribute to AI projects developing, including a user-facing AI assistant and an internal AI coding CLI for engineers",
         },
         {
           title:
