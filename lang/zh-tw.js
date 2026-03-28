@@ -54,24 +54,29 @@ module.exports = {
       whatIDo: [
         {
           title:
-            'Architected Tiktok Shop seller qualification center related pages refactoring via regional abstraction and directory optimization, increased regional closure rate from 40% to 80%, ensuring region isolation and system stability',
+            "Architect TikTok shop qualification center's regional architecture upgrade, increased regional closure rate from 40% to 80%, ensuring region isolation and system stability",
         },
         {
           title:
-            "Led the refactoring of the qualification center\'s form system by building form components\' library, integrating storybook for visual management and establishing a config-driven development model, significantly boosting R&D efficiency while paving the way for AI-assisted form generation",
+            'Lead the optimization of form development and management experience',
+          details: [
+            'build form components (with 30+ reusable components) library and integrate storybook for visual management',
+            'establish a config-driven development model',
+            'boosting R&D efficiency while paving the way for AI-assisted form generation',
+          ],
         },
         {
           title:
-            'Acted as the POC to align with the infrastructure team for architectural migration to eliminate waterfall loading bottlenecks, achieving a 70% reduction in LCP p75 (to less than 5s) and a 50% improvement in CI/CD efficiency',
+            'Act as the POC to align with the infrastructure team for architecture upgrade to improve page performance, achieving a 70% reduction in LCP p75 (to less than 5s) and a 50% improvement in CI/CD efficiency',
         },
         {
           title:
-            'Collaborated on team\'s AI projects by processing 68k-documents for knowledge base for an AI Assistant and participated in development for a Spec-Driven-based AI Coding CLI',
+            'Contribute to AI projects, including a user-facing AI assistant and an internal AI coding CLI for engineers',
         },
         {
           title:
-            'Mentored colleagues by facilitating their onboarding, assisting with task allocation, and providing code reviews to ensure team alignment',
-        }
+            'Mentor colleagues by facilitating their onboarding, assisting with task allocation, and providing consistent code reviews to ensure team alignment',
+        },
       ],
       techStack: ['React', 'Typescript', 'Node.js'],
     },
