@@ -58,15 +58,15 @@ module.exports = {
         },
         {
           title:
-            "Led the refactoring of the qualification center’s form system by building form components' library, integrating storybook for visual management and establishing a config-driven development model, significantly boosting R&D efficiency while paving the way for AI-assisted form generation",
+            "Led the refactoring of the qualification center\'s form system by building form components\' library, integrating storybook for visual management and establishing a config-driven development model, significantly boosting R&D efficiency while paving the way for AI-assisted form generation",
         },
         {
           title:
-            'Acted as the POC to align with the infrastructure team for architectural migration to eliminate waterfall loading bottlenecks, achieving a 70% reduction in LCP p75 (to <5s) and a 50% improvement in CI/CD efficiency',
+            'Acted as the POC to align with the infrastructure team for architectural migration to eliminate waterfall loading bottlenecks, achieving a 70% reduction in LCP p75 (to less than 5s) and a 50% improvement in CI/CD efficiency',
         },
         {
           title:
-            'Collaborated on team’s AI projects by processing 68k-documents for knowledge base for an AI Assistant and participated in development for a Spec-Driven-based AI Coding CLI',
+            'Collaborated on team\'s AI projects by processing 68k-documents for knowledge base for an AI Assistant and participated in development for a Spec-Driven-based AI Coding CLI',
         },
         {
           title:
