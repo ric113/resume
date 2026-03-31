@@ -54,20 +54,15 @@ module.exports = {
       whatIDo: [
         {
           title:
-            "Architect TikTok shop qualification center's regional architecture upgrade, increase regional closure rate from 40% to 80%, ensuring region isolation and system stability",
+            "Architect a regional architecture upgrade of TikTok shop seller qualification center across 20+ markets, leveraging a regional abstraction layer and directory isolation to decouple global code, which increased the regional closure rate from 40% to 80% and ensured system stability",
         },
         {
           title:
-            'Lead the optimization of form development and management experience',
-          details: [
-            'build form components (with 30+ reusable components) library and integrate storybook for visual management',
-            'establish a config-driven development model',
-            'boosting R&D efficiency while paving the way for AI-assisted form generation',
-          ],
+            'Lead a form system overhaul by building a 30+ reusable component library with Storybook visualization and implementing a configuration-driven model, boosting R&D efficiency and laying the architectural foundation for AI-assisted form generation',
         },
         {
           title:
-            'Act as the POC to align with the infrastructure team for architecture upgrade to improve page performance, achieving a 70% reduction in LCP p75 (to less than 5s) and a 50% improvement in CI/CD efficiency',
+            'Serve as the POC to align with the infra-team on a major architecture upgrade, specifically resolving waterfall loading issues in the micro-frontend structure; this optimization reduced LCP p75 by 70% (to less than 5s) while enhancing developer experience by shortening both local development and CI/CD cycles',
         },
         {
           title:
