@@ -70,7 +70,7 @@ module.exports = {
         },
         {
           title:
-            'Mentor colleagues by facilitating their onboarding, assisting with task allocation, and providing consistent code reviews to ensure team alignment',
+            'Mentor colleagues by facilitating their onboarding, assisting with task allocation, and providing code reviews to ensure team alignment',
         },
       ],
       techStack: ['React', 'Typescript', 'Node.js'],
