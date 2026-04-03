@@ -62,7 +62,7 @@ module.exports = {
         },
         {
           title:
-            'Serve as the POC to align with the infra-team on a major architecture upgrade, specifically resolving waterfall loading issues in the micro-frontend structure; this optimization reduced LCP p75 by 70% (to less than 5s) while enhancing developer experience by shortening both local development and CI/CD cycles',
+            'Serve as the POC to align with the infra-team on a major architecture upgrade, specifically resolving waterfall loading issues in the micro-frontend structure; this optimization reduced LCP p75 by 70% (10s+ to less than 4s) while enhancing developer experience by shortening both local development and CI/CD cycles',
         },
         {
           title:
