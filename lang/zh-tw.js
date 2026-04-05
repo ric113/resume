@@ -54,15 +54,15 @@ module.exports = {
       whatIDo: [
         {
           title:
-            "Architect a regional architecture upgrade of TikTok shop seller qualification center across 20+ markets, leveraging a regional abstraction layer and directory isolation to decouple global code, which increased the regional closure rate from 40% to 80% and ensured system stability",
+            "Architect a regional architecture upgrade of TikTok shop seller qualification center across <strong>20+ markets</strong>, leveraging a regional abstraction layer and directory isolation to decouple global code, which increased the regional closure rate <strong>from 40% to 80%</strong> and ensured system stability",
         },
         {
           title:
-            'Lead a form system overhaul by building a 30+ reusable component library with Storybook visualization and implementing a configuration-driven model, boosting R&D efficiency and laying the architectural foundation for AI-assisted form generation',
+            'Lead a form system overhaul by building a <strong>30+</strong> reusable component library with Storybook visualization and implementing a configuration-driven model, boosting R&D efficiency and laying the architectural foundation for AI-assisted form generation',
         },
         {
           title:
-            'Serve as the POC to align with the infra-team on a major architecture upgrade, specifically resolving waterfall loading issues in the micro-frontend structure; this optimization reduced LCP p75 by 70% (10s+ to less than 4s) while enhancing developer experience by shortening both local development and CI/CD cycles',
+            'Serve as the POC to align with the infra-team on a major architecture upgrade, specifically resolving waterfall loading issues in the micro-frontend structure; this optimization reduced LCP p75 by <strong>70% (10s+ to less than 4s)</strong> while enhancing developer experience by shortening both local development and CI/CD cycles',
         },
         {
           title:
